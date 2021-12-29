@@ -1,0 +1,84 @@
+#LIST Comprehension and Basics of 2D lists
+
+accesing values in lists
+l = [[11, 12, 6, 9], [10, 8, 12, 5], [12, 15, 8, 6]]
+print(l[2][3])
+print(l[1][1])
+print(l[0][3])
+# print(l[2][5]) #if inde not in range throws error
+
+#how 2-D lists are stored
+print(type(l[0]))
+print(id(l))
+print(id(l[0]))
+print(id(l[1]))
+print(id(l[0][1]))
+print(id(l[1][1]))
+
+
+jagged lists i.e diff column size ,but 2D lists
+jaggedlist = [[11, 12, 6, 9], [10, 8, 12], [12, 15]]
+# print(jaggedlist[2][3])
+print(jaggedlist[1][1])
+print(jaggedlist[0][3])
+
+
+
+todo list comprehension
+
+l = [1,2,3,4,5,6,7,8,9,10]
+l_new = []
+for i in l:
+    l_new.append(i**2)
+print(l_new)
+
+l_new = [i**2 for i in l]
+print(l_new)
+
+l_new = [i**2 for i in l if i % 2 == 0]
+print(l_new)
+
+
+l_new = [i for i in l if i % 2 == 0 and i % 3 == 0 ]
+print(l_new)
+
+
+
+
+a1 = [1,2,3,4,5,6]
+a2 = [3,5,2]
+# a = []
+# for i in a1:
+#     for j in a2:
+#         if i == j:
+#             a.append(i)
+#             # a +=
+
+
+for nested for loops
+a = [i for i in a1 for j in a2 if i == j]
+print(a)
+
+
+
+if_else in list comprehension
+li = [1,2,3,4,5]
+l = [i**2 if i % 2 == 0 else i for i in li]
+print(l)
+
+
+
+for strings
+s = 'asdfg'
+l = [s for i in s]
+print(l)
+lis = [i for i in s]
+print(lis)
+
+name = ['apple', 'ball', 'car']
+
+l_2d = [[i] for i in name]
+print(l_2d)
+#2d lists creation
+li_2d = [[j for j in i] for i in name]
+print(li_2d)
