@@ -1,3 +1,3 @@
-# DSA_CODING
+# PYTHON Prorgamming Language
 
-Here I will be sharing Basics of Python and Data Structures and Algorithms with Python
+Here I will be sharing Basics of Python.
