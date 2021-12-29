@@ -362,39 +362,3 @@
 # #   * * *
 # #  * * * *
 # # * * * * *
-
-
-
-
-
-# n = int(input())
-# i = 0
-# sum_even = 0
-# sum_odd = 0
-# while n > 0:
-#     i = n % 10
-#     n = n//10
-#     if i % 2 == 0:
-#         sum_even += i
-#     else:
-#         sum_odd += i
-# print(sum_even,sum_odd)
-
-
-
-# def fibonacciNumber(n):
-#     # Write your code here.
-#     x = 1
-#     y = 1
-#     for i in range(3,n):
-#         z = x + y
-#         x, y = y, z
-#
-#     return x+y
-#
-#
-#
-# n = int(input())
-# for i in range(n):
-#     m = int(input())
-#     print(fibonacciNumber(m))
